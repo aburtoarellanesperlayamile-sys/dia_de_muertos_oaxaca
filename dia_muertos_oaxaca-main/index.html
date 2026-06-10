@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Día de Muertos en Oaxaca</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-live="polite">
+      <section class="tour-panel">
+        <div class="media-stage" id="mediaStage">
+          <div class="shade"></div>
+          <header class="top-bar">
+            <button class="icon-button" id="homeButton" type="button" aria-label="Volver al inicio">
+              Inicio
+            </button>
+            <div class="step-counter" id="stepCounter">Bienvenida</div>
+            <button class="icon-button" id="soundButton" type="button" aria-label="Activar o desactivar audio">
+              Audio
+            </button>
+          </header>
+
+          <article class="content-card">
+            <p class="eyebrow" id="sectionEyebrow">Instituto Simón Bolívar</p>
+            <h1 id="sectionTitle">Día de Muertos en Oaxaca</h1>
+            <p id="sectionText">
+              Te damos la bienvenida a un recorrido por las tradiciones, símbolos y emociones del Día de Muertos en Oaxaca.
+              Selecciona un idioma para comenzar la experiencia.
+            </p>
+          </article>
+
+          <article class="quiz-card" id="quizCard" hidden>
+            <p class="eyebrow" id="quizEyebrow">Quiz</p>
+            <h1 id="quizTitle">Pregunta</h1>
+            <p id="quizQuestion"></p>
+            <div class="quiz-options" id="quizOptions"></div>
+            <p class="quiz-feedback" id="quizFeedback" aria-live="polite"></p>
+          </article>
+
+          <div class="language-actions" id="languageActions">
+            <button class="primary-button green" type="button" data-lang="es">Español</button>
+            <button class="primary-button red" type="button" data-lang="en">English</button>
+          </div>
+
+          <nav class="bottom-actions" id="tourActions" hidden>
+            <button class="secondary-button" id="backButton" type="button">Anterior</button>
+            <button class="primary-button" id="nextButton" type="button">Siguiente</button>
+          </nav>
+        </div>
+
+        <aside class="side-panel">
+          <div>
+            <p class="eyebrow" id="moduleEyebrow">Recorrido interactivo</p>
+            <h2 id="moduleTitle">Día de Muertos en Oaxaca</h2>
+            <p id="moduleDescription">
+              Esta versión conserva el contenido del proyecto de Code.org y lo convierte en una página web moderna con HTML,
+              CSS y JavaScript.
+            </p>
+          </div>
+
+          <div class="module-switch" aria-label="Seleccionar recorrido">
+            <button class="module-button active" id="oaxacaModuleButton" type="button">Oaxaca</button>
+            <button class="module-button" id="mictlanModuleButton" type="button">Mictlán</button>
+          </div>
+
+          <ol class="topic-list" id="topicList"></ol>
+
+          <div class="audio-note">
+            <strong>Audio</strong>
+            <span>La música y la narración se activan después de elegir un idioma.</span>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="code.js"></script>
+  </body>
+</html>
